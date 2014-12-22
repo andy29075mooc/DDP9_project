@@ -12,6 +12,9 @@ Data
 ========================================================
 
 Fisher's iris data describes petal and sepal dimensions of three species of irises. This dataset is commonly used to illustration classification models, as the dimensional characteristics are very distinct between the three species. 
+```{r}
+summary(iris)
+```
 
 Support Vector Machine algorithms
 ========================================================
