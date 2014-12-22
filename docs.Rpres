@@ -1,0 +1,30 @@
+SVM example using Fisher's Iris Data
+========================================================
+author: Andy Johnson
+date: 12/21/2014
+
+Intro
+========================================================
+
+This Shiny app lets the user explore the application of a Support Vector Machine (SVM) classification algorithm using the classic Fisher's iris dataset.
+
+Data
+========================================================
+
+Fisher's iris data describes petal and sepal dimensions of three species of irises. This dataset is commonly used to illustration classification models, as the dimensional characteristics are very distinct between the three species. 
+
+Support Vector Machine algorithms
+========================================================
+
+A Support Vector Machine (SVM) is a supervised classification algorithm that attempts to identify a separating hyperplane between the identified classes. It can use a variety of kernel functions to transform the original problem space into higher dimensions. 
+
+The kernel functions available here include:
+- linear
+- radial
+- polynomial
+
+Using this Shiny App
+========================================================
+
+- To use this Shiny App, first select the kernel function type, followed by the petal and sepal dimensions desired. 
+- The SVM model will run, and a plot will be displayed. The plot shows the observations from all three species (color-coded by type), along with the SVM-derived classification boundaries.
