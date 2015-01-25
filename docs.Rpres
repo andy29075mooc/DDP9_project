@@ -2,7 +2,7 @@
 SVM example using Fisher's Iris Data
 ========================================================
 author: Andy Johnson
-date: 1/24/2015
+date: 1/25/2015
 
 Key Points
 ========================================================
@@ -22,6 +22,15 @@ Fisher's iris data describes petal and sepal dimensions of three species of iris
 str(iris)
 ```
 </small>
+
+Fisher's Iris Data
+========================================================
+
+As an example, this plot shows how the three iris species differ according to two of their flower dimensions: 
+```{r, echo=FALSE}
+require(ggplot2)
+ggplot(data = iris, aes(iris$Petal.Length, iris$Sepal.Width)) + geom_point(aes(color = iris$Species, size = 2))
+```
 
 Support Vector Machine algorithms
 ========================================================

@@ -2,7 +2,7 @@
 SVM example using Fisher's Iris Data
 ========================================================
 author: Andy Johnson
-date: 1/24/2015
+date: 1/25/2015
 
 Key Points
 ========================================================
@@ -32,6 +32,12 @@ str(iris)
  $ Species     : Factor w/ 3 levels "setosa","versicolor",..: 1 1 1 1 1 1 1 1 1 1 ...
 ```
 </small>
+
+Fisher's Iris Data
+========================================================
+
+As an example, this plot shows how the three iris species differ according to two of their flower dimensions: 
+![plot of chunk unnamed-chunk-2](docs-figure/unnamed-chunk-2-1.png) 
 
 Support Vector Machine algorithms
 ========================================================
