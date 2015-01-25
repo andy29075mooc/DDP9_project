@@ -749,7 +749,7 @@ hljs.initHighlightingOnLoad();
   <div class="slides">
 
 <section data-state="section" data-transition="linear" data-transition-speed="default">
-<h1>SVM example using Fisher&#x27;s Iris Data</h1><p>Andy Johnson<br/>12&#x2F;21&#x2F;2014</p>
+<h1>SVM example using Fisher&#x27;s Iris Data</h1><p>Andy Johnson<br/>1&#x2F;24&#x2F;2015</p>
 
 <div class="slideContent" >
 
@@ -757,9 +757,13 @@ hljs.initHighlightingOnLoad();
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Intro</h3>
+<h3>Key Points</h3>
 <div class="slideContent" >
-<p>This Shiny app lets the user explore the application of a Support Vector Machine (SVM) classification algorithm using the classic Fisher&#39;s iris dataset.</p>
+<ul>
+<li><p>This Shiny app lets the user explore the application of a Support Vector Machine (SVM) classification algorithm using the classic Fisher&#39;s iris dataset. </p></li>
+<li><p>SVM&#39;s are classification algorithms that can create complex decision boundaries by using a variety of kernel functions.</p></li>
+<li><p>We will employ a SVM to classify different flower species found in Fisher&#39;s iris dataset.</p></li>
+</ul>
 
 </div>
 
@@ -767,7 +771,21 @@ hljs.initHighlightingOnLoad();
 <section data-transition="linear" data-transition-speed="default">
 <h3>Data</h3>
 <div class="slideContent" >
-<p>Fisher&#39;s iris data describes petal and sepal dimensions of three species of irises. This dataset is commonly used to illustration classification models, as the dimensional characteristics are very distinct between the three species. </p>
+<p>Fisher&#39;s iris data describes petal and sepal dimensions of three species of iris. This dataset is commonly used to illustrate the use of classification models, as the dimensional characteristics are distinct between the three species. 
+<small style="font-size:.7em"></p>
+
+<pre><code class="r">str(iris)
+</code></pre>
+
+<pre><code>&#39;data.frame&#39;:   150 obs. of  5 variables:
+ $ Sepal.Length: num  5.1 4.9 4.7 4.6 5 5.4 4.6 5 4.4 4.9 ...
+ $ Sepal.Width : num  3.5 3 3.2 3.1 3.6 3.9 3.4 3.4 2.9 3.1 ...
+ $ Petal.Length: num  1.4 1.4 1.3 1.5 1.4 1.7 1.4 1.5 1.4 1.5 ...
+ $ Petal.Width : num  0.2 0.2 0.2 0.2 0.2 0.4 0.3 0.2 0.2 0.1 ...
+ $ Species     : Factor w/ 3 levels &quot;setosa&quot;,&quot;versicolor&quot;,..: 1 1 1 1 1 1 1 1 1 1 ...
+</code></pre>
+
+<p></small></p>
 
 </div>
 
@@ -792,8 +810,8 @@ hljs.initHighlightingOnLoad();
 <h3>Using this Shiny App</h3>
 <div class="slideContent" >
 <ul>
-<li>To use this Shiny App, first select the kernel function type, followed by the petal and sepal dimensions desired. </li>
-<li>The SVM model will run, and a plot will be displayed. The plot shows the observations from all three species (color-coded by type), along with the SVM-derived classification boundaries.</li>
+<li>To use this Shiny App, first select the kernel function type, followed by the flower petal and sepal dimensions desired. </li>
+<li>The SVM model will automatically run, and a plot of the two chosen dimensions will be displayed. The plot shows the observations from all three species (color-coded by type), along with the SVM-derived classification boundaries.</li>
 </ul>
 
 </div>

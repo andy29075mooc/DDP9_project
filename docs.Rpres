@@ -1,20 +1,27 @@
+
 SVM example using Fisher's Iris Data
 ========================================================
 author: Andy Johnson
-date: 12/21/2014
+date: 1/24/2015
 
-Intro
+Key Points
 ========================================================
 
-This Shiny app lets the user explore the application of a Support Vector Machine (SVM) classification algorithm using the classic Fisher's iris dataset.
+- This Shiny app lets the user explore the application of a Support Vector Machine (SVM) classification algorithm using the classic Fisher's iris dataset. 
+
+- SVM's are classification algorithms that can create complex decision boundaries by using a variety of kernel functions.
+
+- We will employ a SVM to classify different flower species found in Fisher's iris dataset.
 
 Data
 ========================================================
 
-Fisher's iris data describes petal and sepal dimensions of three species of irises. This dataset is commonly used to illustration classification models, as the dimensional characteristics are very distinct between the three species. 
+Fisher's iris data describes petal and sepal dimensions of three species of iris. This dataset is commonly used to illustrate the use of classification models, as the dimensional characteristics are distinct between the three species. 
+<small style="font-size:.7em">
 ```{r}
-summary(iris)
+str(iris)
 ```
+</small>
 
 Support Vector Machine algorithms
 ========================================================
@@ -29,5 +36,5 @@ The kernel functions available here include:
 Using this Shiny App
 ========================================================
 
-- To use this Shiny App, first select the kernel function type, followed by the petal and sepal dimensions desired. 
-- The SVM model will run, and a plot will be displayed. The plot shows the observations from all three species (color-coded by type), along with the SVM-derived classification boundaries.
+- To use this Shiny App, first select the kernel function type, followed by the flower petal and sepal dimensions desired. 
+- The SVM model will automatically run, and a plot of the two chosen dimensions will be displayed. The plot shows the observations from all three species (color-coded by type), along with the SVM-derived classification boundaries.
